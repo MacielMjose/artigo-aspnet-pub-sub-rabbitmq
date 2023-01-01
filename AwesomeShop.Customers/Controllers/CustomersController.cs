@@ -21,7 +21,7 @@ namespace AwesomeShop.Customers.Controllers
                 HostName = "localhost"
             };
 
-            _connection = connectionFactory.CreateConnection("customers-service-order-created-consumer");
+            _connection = connectionFactory.CreateConnection("customers-service-publisher");
 
             _channel = _connection.CreateModel();
         }
